@@ -1,3 +1,44 @@
 body {
   background-color: black;
+  overflow: hidden;
+  font-family: "Plus Jakarta Sans";
+}
+::-webkit-scrollbar {
+  width: 1.25vw;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 39, 39);
+  border-radius: 50px;
+}
+.nav-button {
+  background-color: rgb(49, 49, 49);
+}
+
+.post {
+  background: rgb(31, 31, 31);
+}
+
+.post:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25)),
+    url("https://images.unsplash.com/photo-1668279176630-2ee3be57b6ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+.post:hover > * {
+  color: rgb(255, 197, 197);
+}
+.post:hover > :nth-child(2) > * {
+  background-color: rgb(103, 58, 58);
+}
+
+.tag {
+  background-color: rgb(77, 77, 77);
+}
+
+.new-decision-button {
+  background: rgb(200, 200, 200);
 }
