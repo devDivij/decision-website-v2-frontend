@@ -1,10 +1,12 @@
 body {
   background-color: black;
   overflow: hidden;
+}
+* {
   font-family: "Plus Jakarta Sans";
 }
 ::-webkit-scrollbar {
-  width: 1.25vw;
+  width: 1vw;
 }
 ::-webkit-scrollbar-track {
   background-color: rgb(0, 0, 0);
@@ -41,4 +43,32 @@ body {
 
 .new-decision-button {
   background: rgb(200, 200, 200);
+}
+
+.column-box {
+  background: linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://images.unsplash.com/photo-1685555845405-1503f76a5462?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=348&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.column-text,
+.username {
+  color: rgb(140, 235, 229);
+}
+.assist-button {
+  color: rgb(36, 59, 53);
+  background-color: rgb(140, 235, 229);
+}
+
+.option,
+.assist {
+  background-color: rgb(36, 59, 53);
+}
+
+.assists {
+  background-color: rgb(31, 31, 31);
 }
