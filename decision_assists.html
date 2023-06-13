@@ -6,7 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decision Assists</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="flex justify-center items-center h-screen">
+    <div class="container-box w-full h-full p-[6vh]">
+      <div class="flex flex-col w-full h-full gap-[6vh] text-white">
+        <div class="header flex w-full">
+          <div class="decision-title flex-1 text-4xl mx-[8vw] font-semibold">
+            What should I eat today?
+          </div>
+          <div class="buttons flex gap-[2vw]">
+            <div class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-[6vh]">
+                <path
+                  fill-rule="evenodd"
+                  d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-[6vh]">
+                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="main-content grid grid-cols-4 h-full w-full">
+          <div class="charts h-full flex flex-col justify-center items-center">
+            <div class="bg-blue-500 rounded-full h-[35vh] aspect-square"></div>
+            <div class="flex-1 choices mx-[6vw] my-[3vw] place-self-start">
+              <div class="flex gap-[1vw] items-center my-[2vh]">
+                <div
+                  class="color bg-red-800 aspect-square h-[5vh] rounded-[1.25vh]"></div>
+                <div class="choice font-semibold text-lg">Salad</div>
+              </div>
+              <div class="flex gap-[1vw] items-center my-[2vh]">
+                <div
+                  class="color bg-red-800 aspect-square h-[5vh] rounded-[1.25vh]"></div>
+                <div class="choice font-semibold text-lg">Salad</div>
+              </div>
+              <div class="flex gap-[1vw] items-center my-[2vh]">
+                <div
+                  class="color bg-red-800 aspect-square h-[5vh] rounded-[1.25vh]"></div>
+                <div class="choice font-semibold text-lg">Salad</div>
+              </div>
+              <div class="flex gap-[1vw] items-center my-[2vh]">
+                <div
+                  class="color bg-red-800 aspect-square h-[5vh] rounded-[1.25vh]"></div>
+                <div class="choice font-semibold text-lg">Salad</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="assists rounded-[4vh] col-span-2 max-h-[75vh] overflow-hidden">
+            <div
+              class="h-full flex flex-col gap-[3vh] p-[2vw] overflow-y-scroll">
+              <div class="flex">
+                <div
+                  class="profile-pic rounded-full h-[6vh] aspect-square"></div>
+                <div
+                  class="assist pt-[0.75vw] p-[1.4vw] ml-[1vw] w-full flex flex-col gap-[0.55vh]">
+                  <div class="profile-name font-bold text-[1.25rem] username">
+                    Ojas Mutreja
+                  </div>
+                  <div class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, repudiandae. Explicabo tenetur, dignissimos
+                    expedita animi porro eum commodi reprehenderit impedit?
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="profile-pic rounded-full h-[6vh] aspect-square"></div>
+                <div
+                  class="assist pt-[0.75vw] p-[1.4vw] ml-[1vw] w-full flex flex-col gap-[0.55vh]">
+                  <div class="profile-name font-bold text-[1.25rem] username">
+                    Ojas Mutreja
+                  </div>
+                  <div class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, repudiandae. Explicabo tenetur, dignissimos
+                    expedita animi porro eum commodi reprehenderit impedit?
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="profile-pic rounded-full h-[6vh] aspect-square"></div>
+                <div
+                  class="assist pt-[0.75vw] p-[1.4vw] ml-[1vw] w-full flex flex-col gap-[0.55vh]">
+                  <div class="profile-name font-bold text-[1.25rem] username">
+                    Ojas Mutreja
+                  </div>
+                  <div class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, repudiandae. Explicabo tenetur, dignissimos
+                    expedita animi porro eum commodi reprehenderit impedit?
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="profile-pic rounded-full h-[6vh] aspect-square"></div>
+                <div
+                  class="assist pt-[0.75vw] p-[1.4vw] ml-[1vw] w-full flex flex-col gap-[0.55vh]">
+                  <div class="profile-name font-bold text-[1.25rem] username">
+                    Ojas Mutreja
+                  </div>
+                  <div class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, repudiandae. Explicabo tenetur, dignissimos
+                    expedita animi porro eum commodi reprehenderit impedit?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="navbar flex flex-col gap-[2vh] text-lg font-medium h-full mx-[4vw]">
+            <div
+              class="h-[8vh] bg-neutral-800 rounded-[2vh] flex gap-[1vw] px-[1vw] items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-[3.5vh]">
+                <path
+                  d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                <path
+                  d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+              </svg>
+
+              Overview
+            </div>
+            <div
+              class="h-[8vh] bg-neutral-900 text-neutral-400 rounded-[2vh] flex gap-[1vw] px-[1vw] items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-[3.5vh]">
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 2.25a.75.75 0 000 1.5H3v10.5a3 3 0 003 3h1.21l-1.172 3.513a.75.75 0 001.424.474l.329-.987h8.418l.33.987a.75.75 0 001.422-.474l-1.17-3.513H18a3 3 0 003-3V3.75h.75a.75.75 0 000-1.5H2.25zm6.54 15h6.42l.5 1.5H8.29l.5-1.5zm8.085-8.995a.75.75 0 10-.75-1.299 12.81 12.81 0 00-3.558 3.05L11.03 8.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 001.146-.102 11.312 11.312 0 013.612-3.321z"
+                  clip-rule="evenodd" />
+              </svg>
+
+              Reach
+            </div>
+            <div
+              class="h-[8vh] bg-neutral-900 text-neutral-400 rounded-[2vh] flex gap-[1vw] px-[1vw] items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-[3.5vh]">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd" />
+              </svg>
+
+              Detailed view
+            </div>
+            <div
+              class="h-[8vh] bg-red-950 text-red-400 rounded-[2vh] flex gap-[1vw] px-[1vw] items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-[3.5vh]">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                  clip-rule="evenodd" />
+              </svg>
+
+              Delete
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

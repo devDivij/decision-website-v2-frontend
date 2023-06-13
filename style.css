@@ -9,7 +9,6 @@ body {
   width: 1vw;
 }
 ::-webkit-scrollbar-track {
-  background-color: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(39, 39, 39);
@@ -67,6 +66,8 @@ body {
 .option,
 .assist {
   background-color: rgb(36, 59, 53);
+  border-radius: 4vh;
+  border-top-left-radius: 0;
 }
 
 .assists {
