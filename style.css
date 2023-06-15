@@ -22,29 +22,22 @@ body {
 }
 
 .post {
-  background: rgb(31, 31, 31);
-}
-
-.post:hover {
+  color: #ffc9c9;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25)),
     url("https://images.unsplash.com/photo-1668279176630-2ee3be57b6ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
 
   background-size: cover;
   background-position: center;
 }
-.post:hover > * {
+.post > * {
   color: rgb(255, 197, 197);
 }
-.post:hover > :nth-child(2) > * {
+.post > :nth-child(2) > * {
   background-color: rgb(103, 58, 58);
 }
 
 .tag {
   background-color: rgb(77, 77, 77);
-}
-
-.new-decision-button {
-  background: rgb(200, 200, 200);
 }
 
 .column-box {
