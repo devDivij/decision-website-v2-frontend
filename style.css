@@ -43,31 +43,28 @@ body {
 .column-box {
   background: linear-gradient(
       to top right,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
     ),
-    url("https://images.unsplash.com/photo-1685555845405-1503f76a5462?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=348&q=80");
+    url("https://images.unsplash.com/photo-1685866865968-3b4b53b88027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80");
   background-size: cover;
   background-position: center;
 }
 .column-text,
 .username {
-  color: rgb(140, 235, 229);
+  color: rgb(235, 216, 140);
 }
 .assist-button {
   color: rgb(36, 59, 53);
-  background-color: rgb(140, 235, 229);
+  background-color: rgb(255, 201, 109);
 }
-
-.option,
+.option {
+  background-color: rgb(59, 58, 36);
+}
 .assist {
-  background-color: rgb(36, 59, 53);
+  background-color: rgb(59, 58, 36);
   border-radius: 4vh;
   border-top-left-radius: 0;
-}
-
-.assists {
-  background-color: rgb(31, 31, 31);
 }
 
 select {
