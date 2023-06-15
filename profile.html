@@ -12,18 +12,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="flex justify-center items-center h-screen">
-    <div class="container-box w-full h-full p-[4vh]">
-      <div class="flex w-full h-full gap-[6vh] text-white">
+    <div class="container-box w-full h-full p-[4vh] pb-0 md:pb-[4vh]">
+      <div class="flex w-full h-full gap-[6vh] text-white justify-center">
         <!-- Navbar -->
-        <nav class="w-1/12 h-full mx-[4vh] p-[4vh]">
-          <div class="flex flex-col h-full bg-black text-white items-center">
+        <nav
+          class="max-w-[90vw] w-full bg-black md:w-1/12 place-self-end absolute md:relative h-[14vh] md:h-full lg:mx-[4vh] p-[2vh] md:p-[4vh]">
+          <div class="flex md:flex-col h-full text-white items-center">
             <a href="" class="">
               <div class="text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="w-[6vh]">
+                  class="w-[5vh] lg:w-[6vh]">
                   <path
                     fill-rule="evenodd"
                     d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
@@ -32,18 +33,18 @@
               </div>
             </a>
             <div
-              class="flex-1 flex flex-col m-2 gap-4 w-full justify-center items-center">
+              class="flex-1 flex md:flex-col m-2 gap-4 w-full justify-center items-center">
               <a href="">
                 <div
-                  class="nav-button aspect-square h-[12vh] rounded-full"></div
+                  class="nav-button aspect-square h-[8vh] lg:h-[12vh] rounded-full"></div
               ></a>
               <a href="">
                 <div
-                  class="nav-button aspect-square h-[12vh] rounded-full"></div
+                  class="nav-button aspect-square h-[8vh] lg:h-[12vh] rounded-full"></div
               ></a>
               <a href="">
                 <div
-                  class="nav-button aspect-square h-[12vh] rounded-full"></div
+                  class="nav-button aspect-square h-[8vh] lg:h-[12vh] rounded-full"></div
               ></a>
             </div>
             <a href="#">
@@ -52,7 +53,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="w-[6vh]">
+                  class="w-[5vh] lg:w-[6vh]">
                   <path
                     fill-rule="evenodd"
                     d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
@@ -62,166 +63,113 @@
             </a>
           </div>
         </nav>
-        <div class="main-content w-[82vw] h-[95vh] flex flex-col gap-[1vh]">
-          <div class="heading flex gap-[1.5vh]">
-            <div
-              class="profile-pic aspect-square h-[25vh] rounded-full bg-red-800"></div>
-            <div class="p-[2vw] flex flex-col gap-[2vh] flex-1 justify-center">
-              <p class="text-5xl font-semibold">Ojas Mutreja</p>
-              <p class="text-xl mx-[3vh]">
-                I am a passionate businessman (not an entrepreneur)
-              </p>
+        <div class="main-content flex-1 flex flex-col gap-[1vh] m-[2vh]">
+          <div
+            class="heading flex flex-col md:flex-row gap-[2vh] mb-[2vh] md:gap-[1.5vh] items-center justify-center">
+            <div class="flex gap-[1.5vh]">
+              <div
+                class="profile-pic aspect-square h-[12vh] md:h-[25vh] rounded-full"></div>
+              <div
+                class="p-[2vw] flex flex-col gap-[1vh] md:gap-[2vh] flex-1 justify-center">
+                <p class="text-2xl lg:text-5xl md:text-4xl font-semibold">
+                  Ojas Mutreja
+                </p>
+                <p
+                  class="text-sm mx-[1vh] md:mx-[3vh] text-neutral-400 underline font-semibold">
+                  ojasmutreja27@gmail.com
+                </p>
+                <p class="hidden md:block lg:text-xl md:text-regular mx-[3vh]">
+                  I am a passionate businessman (not an entrepreneur)
+                </p>
+              </div>
             </div>
-            <div class="m-[5vh] flex flex-col items-center justify-center">
-              <p class="font-medium text-2xl">Assists</p>
-              <p class="font-bold text-5xl">120</p>
+            <p class="md:hidden text-center text-sm mx-[3vh]">
+              I am a passionate businessman (not an entrepreneur)
+            </p>
+            <div
+              class="flex gap-[8vw] md:gap-[1.5vh] w-full md:w-max font-medium">
+              <div
+                class="flex-1 md:m-[2vh] lg:m-[5vh] flex flex-col items-center justify-center">
+                <p class="font-bold text-2xl md:text-4xl lg:text-5xl">120</p>
+                <p class="text-sm md:text-regular lg:text-xl text-center">
+                  Assists
+                </p>
+              </div>
+              <div
+                class="flex-1 md:m-[2vh] lg:m-[5vh] flex flex-col items-center justify-center">
+                <p class="font-bold text-2xl md:text-4xl lg:text-5xl">21</p>
+                <p class="text-sm md:text-regular lg:text-xl text-center">
+                  Helped
+                </p>
+              </div>
             </div>
           </div>
           <div
-            class="flex items-navbar place-self-end mb-[2vh] h-[8vh] gap-[1vw]">
+            class="flex items-navbar place-self-center gap-[4vw] font-semibold text-xs md:text-lg w-full items-center justify-center text-center">
+            <div class="flex-1 md:flex-none text-neutral-400">Decisions</div>
             <div
-              class="flex px-[1.25vw] items-center rounded-[2vh] text-xl font-semibold text-black h-full bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="h-[5vh] pr-[1vw]">
-                <path
-                  fill-rule="evenodd"
-                  d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z"
-                  clip-rule="evenodd" />
-                <path
-                  d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z" />
-              </svg>
-              Public Decisions
-            </div>
-            <div
-              class="px-[1.25vw] flex items-center justify-center rounded-[2vh] text-2xl font-semibold bg-neutral-800">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="h-[4vh]">
-                <path
-                  fill-rule="evenodd"
-                  d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
-            <div
-              class="px-[1.25vw] flex items-center justify-center rounded-[2vh] text-2xl font-semibold bg-neutral-800">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="h-[4vh]">
-                <path
-                  fill-rule="evenodd"
-                  d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z"
-                  clip-rule="evenodd" />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="items overflow-y-scroll p-[1vh] grid grid-cols-4 gap-[1.5vw] flex-1">
-            <div
-              class="decision flex flex-col items-center text-[2.7rem] leading-tight font-semibold rounded-[4vh] h-[55vh]">
-              <div class="p-[2vw] flex-1 flex items-center">
-                What should I eat today?
-              </div>
-              <div
-                class="uppercase text-white text-base place-self-end px-[1vw]">
-                1221 Assists
-              </div>
-              <div
-                class="opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
-            </div>
-            <div
-              class="decision flex flex-col items-center text-[2.7rem] leading-tight font-semibold rounded-[4vh] h-[55vh]">
-              <div class="p-[2vw] flex-1 flex items-center">
-                What should I eat today?
-              </div>
-              <div
-                class="uppercase text-white text-base place-self-end px-[1vw]">
-                1221 Assists
-              </div>
-              <div
-                class="opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
-            </div>
-            <div
-              class="decision flex flex-col items-center text-[2.7rem] leading-tight font-semibold rounded-[4vh] h-[55vh]">
-              <div class="p-[2vw] flex-1 flex items-center">
-                What should I eat today?
-              </div>
-              <div
-                class="uppercase text-white text-base place-self-end px-[1vw]">
-                1221 Assists
-              </div>
-              <div
-                class="opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
-            </div>
-            <div
-              class="decision flex flex-col items-center text-[2.7rem] leading-tight font-semibold rounded-[4vh] h-[55vh]">
-              <div class="p-[2vw] flex-1 flex items-center">
-                What should I eat today?
-              </div>
-              <div
-                class="uppercase text-white text-base place-self-end px-[1vw]">
-                1221 Assists
-              </div>
-              <div
-                class="opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
-            </div>
-            <div
-              class="decision flex flex-col items-center text-[2.7rem] leading-tight font-semibold rounded-[4vh] h-[55vh]">
-              <div class="p-[2vw] flex-1 flex items-center">
-                What should I eat today?
-              </div>
-              <div
-                class="uppercase text-white text-base place-self-end px-[1vw]">
-                1221 Assists
-              </div>
-              <div
-                class="opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
-            </div>
-            <div
-              class="decision flex flex-col items-center text-[2.7rem] leading-tight font-semibold rounded-[4vh] h-[55vh]">
-              <div class="p-[2vw] flex-1 flex items-center">
-                What should I eat today?
-              </div>
-              <div
-                class="uppercase text-white text-base place-self-end px-[1vw]">
-                1221 Assists
-              </div>
-              <div
-                class="opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
-            </div>
-            <div
-              class="decision flex flex-col items-center text-[2.7rem] leading-tight font-semibold rounded-[4vh] h-[55vh]">
-              <div class="p-[2vw] flex-1 flex items-center">
-                What should I eat today?
-              </div>
-              <div
-                class="uppercase text-white text-base place-self-end px-[1vw]">
-                1221 Assists
-              </div>
-              <div
-                class="opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
-            </div>
-          </div>
-          <!-- <div
-            class="items-nav flex h-[8vh] w-[50vw] bg-neutral-900 text-xl font-bold rounded-full place-self-center border-2">
-            <div
-              class="flex justify-center items-center px-[1vw] rounded-full bg-white flex-1 text-black">
-              Public Decisions
-            </div>
-            <div class="flex justify-center items-center rounded-full flex-1">
+              class="flex-1 flex flex-col md:flex-none items-center justify-center">
               Assists
+              <div
+                class="h-[0.4vh] rounded-full w-[3vw] m-[0.5vh] lg:w-[1vw] bg-white"></div>
             </div>
-            <div class="flex justify-center items-center rounded-full flex-1">
-              Saved
+            <div class="flex-1 md:flex-none text-neutral-400">Saved</div>
+          </div>
+          <div
+            class="items overflow-y-scroll md:p-[1vh] grid md:grid-cols-3 place-self-center w-full lg:grid-cols-4 gap-[1.5vw] flex-1">
+            <div
+              class="decision flex flex-col p-[3vh] lg:p-[2vh] md:items-center text-2xl md:text-4xl lg:text-[2.7rem] md:leading-snug lg:leading-tight font-semibold rounded-[3vh] md:rounded-[4vh] h-[18vh] md:h-[55vh]">
+              <div class="flex-1 pr-[4vh] flex md:items-center">
+                What should I eat today?
+              </div>
+              <div
+                class="uppercase text-white text-base self-end place-self-end lg:px-[1vw]">
+                1221
+                <p class="hidden md:inline-block">Assists</p>
+              </div>
+              <div
+                class="hidden lg:block opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
             </div>
-          </div> -->
+            <div
+              class="decision flex flex-col p-[3vh] lg:p-[2vh] md:items-center text-2xl md:text-4xl lg:text-[2.7rem] md:leading-snug lg:leading-tight font-semibold rounded-[3vh] md:rounded-[4vh] h-[18vh] md:h-[55vh]">
+              <div class="flex-1 pr-[4vh] flex md:items-center">
+                What should I eat today?
+              </div>
+              <div
+                class="uppercase text-white text-base self-end place-self-end lg:px-[1vw]">
+                1221
+                <p class="hidden md:inline-block">Assists</p>
+              </div>
+              <div
+                class="hidden lg:block opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
+            </div>
+            <div
+              class="decision flex flex-col p-[3vh] lg:p-[2vh] md:items-center text-2xl md:text-4xl lg:text-[2.7rem] md:leading-snug lg:leading-tight font-semibold rounded-[3vh] md:rounded-[4vh] h-[18vh] md:h-[55vh]">
+              <div class="flex-1 pr-[4vh] flex md:items-center">
+                What should I eat today?
+              </div>
+              <div
+                class="uppercase text-white text-base self-end place-self-end lg:px-[1vw]">
+                1221
+                <p class="hidden md:inline-block">Assists</p>
+              </div>
+              <div
+                class="hidden lg:block opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
+            </div>
+            <div
+              class="decision flex flex-col p-[3vh] lg:p-[2vh] md:items-center text-2xl md:text-4xl lg:text-[2.7rem] md:leading-snug lg:leading-tight font-semibold rounded-[3vh] md:rounded-[4vh] h-[18vh] md:h-[55vh]">
+              <div class="flex-1 pr-[4vh] flex md:items-center">
+                What should I eat today?
+              </div>
+              <div
+                class="uppercase text-white text-base self-end place-self-end lg:px-[1vw]">
+                1221
+                <p class="hidden md:inline-block">Assists</p>
+              </div>
+              <div
+                class="hidden lg:block opacity-0 m-[1vh] on-hover-line h-[1vh] rounded-full w-[50%]"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
