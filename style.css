@@ -110,3 +110,12 @@ select {
   background-size: cover;
   background-position: center;
 }
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+input[type="checkbox"]:checked {
+  appearance: auto;
+  -webkit-appearance: auto;
+}

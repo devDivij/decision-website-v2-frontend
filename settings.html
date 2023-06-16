@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <div class="container-box w-full h-full p-[4vh] pb-0 md:pb-[4vh]">
+      <div
+        class="flex flex-col md:flex-row w-full text-white h-full gap-[3vh] lg:gap-[6vh]">
+        <div class="relative flex items-center md:absolute m-[2vh] md:m-[5vh]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-[6vh] md:h-[9vh]">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+          <div class="md:hidden font-semibold flex-1 mx-[3vh] text-xl">
+            Settings
+          </div>
+        </div>
+        <div
+          class="hidden navbar w-[18vw] md:flex flex-col justify-center gap-[2vh] text-regular lg:text-xl font-medium h-full lg:mx-[4vw]">
+          <div
+            class="h-[8vh] bg-neutral-800 rounded-[2vh] flex gap-[1vw] px-[1vw] items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-[3.5vh]">
+              <path
+                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+              <path
+                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+            </svg>
+
+            Overview
+          </div>
+          <div
+            class="h-[8vh] bg-neutral-900 text-neutral-400 rounded-[2vh] flex gap-[1vw] px-[1vw] items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-[3.5vh]">
+              <path
+                fill-rule="evenodd"
+                d="M2.25 2.25a.75.75 0 000 1.5H3v10.5a3 3 0 003 3h1.21l-1.172 3.513a.75.75 0 001.424.474l.329-.987h8.418l.33.987a.75.75 0 001.422-.474l-1.17-3.513H18a3 3 0 003-3V3.75h.75a.75.75 0 000-1.5H2.25zm6.54 15h6.42l.5 1.5H8.29l.5-1.5zm8.085-8.995a.75.75 0 10-.75-1.299 12.81 12.81 0 00-3.558 3.05L11.03 8.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 001.146-.102 11.312 11.312 0 013.612-3.321z"
+                clip-rule="evenodd" />
+            </svg>
+
+            Reach
+          </div>
+          <div
+            class="h-[8vh] bg-neutral-900 text-neutral-400 rounded-[2vh] flex gap-[1vw] px-[1vw] items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-[3.5vh]">
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd" />
+            </svg>
+
+            Detailed view
+          </div>
+        </div>
+        <div class="text-lg md:text-xl lg:text-2xl w-full overflow-y-scroll">
+          <form class="">
+            <div class="flex flex-col mx-[5vh] gap-[1vh]">
+              <div class="flex md:flex-row flex-col-reverse items-center">
+                <div class="flex flex-col flex-1 gap-[1vh] w-full">
+                  <div class="flex-1">
+                    <p class="py-[1vh]">Name</p>
+                    <input
+                      type="text"
+                      class="w-full text-2xl lg:text-3xl p-[2vh] bg-neutral-800 h-[10vh] rounded-[3vh]" />
+                  </div>
+                  <div class="flex-1">
+                    <p class="py-[1vh]">Email</p>
+                    <input
+                      type="email"
+                      class="w-full text-2xl lg:text-3xl p-[2vh] bg-neutral-800 h-[10vh] rounded-[3vh]" />
+                  </div>
+                </div>
+                <div
+                  class="profile-pic md:float-right h-[20vh] w-[20vh] md:w-max md:h-[30vh] m-[2vh] md:m-[5vh] mr-0 aspect-square rounded-full"></div>
+              </div>
+
+              <div class="flex-1">
+                <p class="py-[1vh]">Bio</p>
+                <textarea
+                  name=""
+                  id=""
+                  class="w-full text-2xl lg:text-3xl h-[20vh] p-[2vh] bg-neutral-800 rounded-[3vh]"></textarea>
+              </div>
+              <div class="flex-1">
+                <p class="py-[1vh]">Radio</p>
+                <div class="flex gap-[1vh] py-[1vh] items-center">
+                  <input
+                    type="radio"
+                    name="radio"
+                    class="p-[2vh] bg-neutral-800 h-[3vh] md:h-[4vh] accent-black aspect-square" />
+                  <span class="text-xl lg:text-2xl">Option 1</span>
+                </div>
+                <div class="flex gap-[1vh] py-[1vh] items-center">
+                  <input
+                    type="radio"
+                    name="radio"
+                    class="p-[2vh] bg-neutral-800 h-[3vh] md:h-[4vh] accent-black aspect-square" />
+                  <span class="text-xl lg:text-2xl">Option 1</span>
+                </div>
+                <div class="flex gap-[1vh] py-[1vh] items-center">
+                  <input
+                    type="radio"
+                    name="radio"
+                    class="p-[2vh] bg-neutral-800 h-[3vh] md:h-[4vh] accent-black aspect-square" />
+                  <span class="text-xl lg:text-2xl">Option 1</span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <p class="py-[1vh]">Checkbox</p>
+                <div class="flex gap-[1vh] py-[1vh] items-center">
+                  <input
+                    type="checkbox"
+                    name="radio"
+                    class="p-[1.5vh] md:p-[2vh] bg-white h-[3vh] md:h-[4vh] accent-black aspect-square rounded-[0.9vh]" />
+                  <span class="text-xl md:text-2xl">Option 1</span>
+                </div>
+                <div class="flex gap-[1vh] py-[1vh] items-center">
+                  <input
+                    type="checkbox"
+                    name="radio"
+                    class="p-[1.5vh] md:p-[2vh] bg-white h-[3vh] md:h-[4vh] accent-black aspect-square rounded-[0.9vh]" />
+                  <span class="text-xl md:text-2xl">Option 1</span>
+                </div>
+                <div class="flex gap-[1vh] py-[1vh] items-center">
+                  <input
+                    type="checkbox"
+                    name="radio"
+                    class="p-[1.5vh] md:p-[2vh] bg-white h-[3vh] md:h-[4vh] accent-black aspect-square rounded-[0.9vh]" />
+                  <span class="text-xl md:text-2xl">Option 1</span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <p class="py-[1vh]">Decision Category *</p>
+                <select
+                  name=""
+                  id=""
+                  class="bg-neutral-800 rounded-[3vh] h-[10vh] w-full text-xl md:text-2xl my-[1vh] p-[2vh]">
+                  <option value="Food">Food</option>
+                  <option value="Food">Food</option>
+                  <option value="Food">Food</option>
+                  <option value="Food">Food</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
