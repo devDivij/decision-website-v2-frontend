@@ -70,7 +70,7 @@ body {
 select {
   background-image: url("");
 }
-.accordion {
+.optional-header {
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -84,8 +84,8 @@ select {
   color: #ffffff;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
+/* Style the optional-header expanded. Note: hidden by default */
+.expanded {
   padding: 0 18px;
   display: none;
   overflow: hidden;
@@ -118,4 +118,8 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   appearance: auto;
   -webkit-appearance: auto;
+}
+
+.expanded > textarea:focus {
+  outline: none;
 }
