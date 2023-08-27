@@ -123,3 +123,10 @@ input[type="checkbox"]:checked {
 .expanded > textarea:focus {
   outline: none;
 }
+
+.auth-background {
+  background-image: url("./background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
